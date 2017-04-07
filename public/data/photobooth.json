@@ -1,26 +1,26 @@
 [
   {
-    "image": "ban1.jpg",
-    "description": "Freaked Out!"
+    "image": "photo1.jpg",
+    "description": "Dance Battle"
   },
   {
-    "image": "ban2.jpg",
-    "description": "Groovin' to some Tunes"
+    "image": "photo2.jpg",
+    "description": "The Generic Smile"
   },
   {
-    "image": "ban3.jpg",
-    "description": "Short-Circuited"
+    "image": "photo3.jpg",
+    "description": "On The Panel"
   },
   {
-    "image": "ban4.jpg",
-    "description": "My Space"
+    "image": "photo4.jpg",
+    "description": "The Gro Sisters"
   },
   {
-    "image": "ban5.jpg",
-    "description": "In the Zone"
+    "image": "photo5.jpg",
+    "description": "Penny and Cashew"
   },
   {
-    "image": "ban6.jpg",
-    "description": "Kicking some butt!"
+    "image": "photo6.jpg",
+    "description": "Trudy Knows Best"
   }
 ]

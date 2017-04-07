@@ -1,3 +1,8 @@
+body {
+    background: #000;
+    color:white;
+}
+
 .side-nav {
     min-height: 1000px;
 }
@@ -80,7 +85,7 @@ nav .brand-logo {
 }
 
 .brand-logo img {
-    width: 170px;
+    width: 96px;
     padding: 1px;
 }
 
@@ -90,7 +95,7 @@ nav .brand-logo {
 
 .videoMain {
     width: 100%;
-    max-height: 500px;
+    max-height: 600px;
     background: #000;
     background-size: cover;
     overflow: hidden;
@@ -195,8 +200,8 @@ p {
 }
 
 .summaryBg {
-    background: no-repeat 100px bottom;
-    background-size:37%;
+    background:url('../../public/images/babies.png') no-repeat top right fixed;
+    background-size:100%%;
 }
 
 .jennyBg {
@@ -349,4 +354,28 @@ p {
 }
 
 .photoBg {
+    position:relative;
+}
+
+.photoList img {
+    max-width:100%;
+}
+
+.photoHolder {
+    position:relative;
+        margin-bottom: 2em;
+}
+
+.moviesBg {
+    background:url('../../public/images/logo-large.png') no-repeat bottom left;
+}
+
+.floatImageBottom {
+    position:absolute;
+            right: 4em;
+            bottom: -10em;
+}
+
+.floatImageBottom img {
+    max-width:150px;
 }

@@ -58,29 +58,33 @@ export default class App extends Component {
           <div className="video-res">
 
               <video id="self1" className="html5-video player" width="100%" loop autoPlay muted>
-                  <source src="http://templatedeck.com/demos/stoker1_0_3/vid/video2.mp4" width="100%" type="video/mp4"></source>
-                  <source src="http://templatedeck.com/demos/stoker1_0_3/vid/video2.ogg" width="100%" type="video/ogg"></source>
+                  <source src="media/main.mp4" width="100%" type="video/mp4"></source>
               </video>
 
               <div className="video-overlay"></div>
           </div>
 
 
-          <div className="summaryBg">
+          <div className="wordsBg">
               <div className="container">
                   <div className="wow fadeInLeft col s12 center-align scrollspy" id="">
                       <div className="col s12 spacer-small"></div>
 
                       <div className="text">
-                          <h1>About</h1>
+                          <h1>The Proud Family</h1>
 
                           <p>
-                              The bears attempt to integrate with human society, such as by purchasing food, making human companions or trying to become famous on the Internet, although these attempts see the bears struggle to do so due to the civilized nature of humans and their own animal instincts. However, in the end, they figure out that they have each other for support. One notable aspect of the show's humor is the bears' ability to form a "bear stack". As its name implies, the bears stack on top of each other, which serves as their unique way of transportation.
+                               gle to do so due to the civilized nature of humans and their own animal instincts. However, in the end, they figure out that they have each other for support. One notable aspect of the show's humor is the bears' ability to form a "bear stack". As its name implies, the bears stack on top of each other, which serves as their unique way of transportation.
                           </p>
                       </div>
                       <div className="col s12 spacer-small"></div>
                       <p className="">
-                          <a className="midButton waves-effect waves-light btn modal-trigger pink accent-2" href="https://en.wikipedia.org/wiki/We_Bare_Bears" target="_blank">Learn More</a>
+                          <a
+                              className="midButton waves-effect waves-light btn modal-trigger blue lighten-2"
+                              href="#values"
+                              target="_blank">
+                                Penny's Values
+                          </a>
                       </p>
                   </div>
 
@@ -94,28 +98,28 @@ export default class App extends Component {
           <div className="videoMain" id="scoop">
 
               <video id="self1" className="html5-video player" width="100%" loop="true" autoPlay="true" muted>
-                  <source src="http://templatedeck.com/demos/stoker1_0_3/vid/video2.mp4" width="100%" type="video/mp4">
+                  <source src="media/dance.mp4" width="100%" type="video/mp4">
                   </source>
               </video>
 
           </div>
 
-          <div className="parallax-container">
+          <div className="parallax-container" id="values">
               <div className="parallax"><img src="images/parallax1.jpg" alt="Banner" /></div>
               <a className="hangRight btn-floating btn-large waves-effect waves-light red pulse"><i className="material-icons">add</i></a>
-              <h2 className="left">Beyond the Mystery Shack</h2>
+              <h2 className="left">My Friends</h2>
           </div>
 
           <div className="parallax-container">
-              <div className="parallax"><img src="images/parallax1.jpg" alt="Banner" /></div>
+              <div className="parallax"><img src="images/parallax2.jpg" alt="Banner" /></div>
               <a className="hangLeft btn-floating btn-large waves-effect waves-light red pulse"><i className="material-icons">add</i></a>
-              <h2 className="right">Beyond the Mystery Shack</h2>
+              <h2 className="right">My Family</h2>
           </div>
 
           <div className="parallax-container">
-              <div className="parallax"><img src="images/parallax1.jpg" alt="Banner" /></div>
+              <div className="parallax"><img src="images/parallax3.jpg" alt="Banner" /></div>
               <a className="hangRight btn-floating btn-large waves-effect waves-light red pulse"><i className="material-icons">add</i></a>
-              <h2 className="left">Beyond the Mystery Shack</h2>
+              <h2 className="left">My Happiness</h2>
           </div>
 
           <div className="charactersBg">
@@ -152,13 +156,27 @@ export default class App extends Component {
               <div className="container">
                   <div className="wow fadeInLeft col s12 center-align scrollspy" id="about">
                       <div className="col s12 spacer-small"></div>
-                      <h1>About</h1>
+                      <h1>About Penny</h1>
 
                       <p>
-                          We Bare Bears follows three adoptive bear brothers: Grizzly, Panda and Ice Bear. The bears attempt to integrate with human society, such as by purchasing food, making human companions or trying to become famous on the Internet, although these attempts see the bears struggle to do so due to the civilized nature of humans and their own animal instincts. However, in the end, they figure out that they have each other for support. One notable aspect of the show's humor is the bears' ability to form a "bear stack". As its name implies, the bears stack on top of each other, which serves as their unique way of transportation.
+                          Fourteen-year-old Penny Proud is growing up! She’s trying to gain her independence
+                          and faces typical teenage experiences in junior high. With the help of her parents,
+                           Trudy and Oscar, and her grandma, Sugar Mama, Penny faces all sorts of comical events.
+                      </p>
+
+                      <p>
+                        She enjoys hanging out with her friends, even though they have gotten her into trouble,
+                        and left her to face danger by herself many times. She listens to and always
+                        respects her parents, but often caves in to peer pressure. She is also a
+                        feminist at times, and is very logical despite her cuteness and beauty.
                       </p>
                       <p>
-                          <a className="waves-effect waves-light btn modal-trigger pink accent-2" href="https://en.wikipedia.org/wiki/We_Bare_Bears" target="_blank">Learn More</a>
+                          <a
+                              className="waves-effect waves-light btn modal-trigger blue lighten-2"
+                              href="https://en.wikipedia.org/wiki/The_Proud_Family"
+                              target="_blank">
+                              Learn More
+                          </a>
                       </p>
                   </div>
 
@@ -168,10 +186,9 @@ export default class App extends Component {
           </div>
 
           <div className="photoBg" id="photos">
-              <div className="container">
                   <div className="wow fadeInLeft col s12 center-align scrollspy" id="about">
                       <div className="col s12 spacer-small"></div>
-                      <h1>Photos</h1>
+                      <h1>Memorable Moments</h1>
 
                       <div className="col l12 m12 s12 no-padding">
                           <PhotoList data={this.state.photos} />
@@ -181,7 +198,10 @@ export default class App extends Component {
 
                   <div className="col s12 spacer-small"></div>
 
-              </div>
+                  <div className="floatImageBottom">
+                                                <img src="images/floater1.png" alt="Float" />
+                                          </div>
+
           </div>
       </div>
     );
