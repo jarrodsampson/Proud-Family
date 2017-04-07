@@ -95,16 +95,25 @@ nav .brand-logo {
     background-size: cover;
     overflow: hidden;
     z-index: -4;
+    margin-top: -6.5em;
 }
 
-.parallax-container h2 {
+.parallax-container .left, .parallax-container .right {
     background: rgba(0,0,0,0.6);
     color: white;
     position: absolute;
     width: 100%;
     bottom: -0.5em;
     left: 0;
-    padding: 0.5em 0 0.5em 1em;
+    padding: .5em 1em 0.5em 1em;
+}
+
+.parallax-container .left {
+    text-align: left;
+}
+
+.parallax-container .right {
+    text-align: right;
 }
 
 p {
@@ -185,10 +194,6 @@ p {
     margin: 0 0.5em 0 0.5em;
 }
 
-.photoBg h1 {
-    color:white;
-}
-
 .summaryBg {
     background: no-repeat 100px bottom;
     background-size:37%;
@@ -259,49 +264,89 @@ p {
 
 /* top slider */
 
-.parallax{
-    width:100%;
-    min-height:700px;
-    max-height:700px;
-    height: 700px;
-}
-
-.parallaxHalf{
-    width:50%;
-    min-height:700px;
-    max-height:700px;
-    height: 700px;
-}
-
-.first {
-    background:url('https://upload.wikimedia.org/wikipedia/en/0/08/Infinit_company_logo.png') no-repeat top;
-    background-size: 30%;
-    z-index:-4;
-}
-
-.second {
-    background:url('https://unsplash.it/1980/1250/?random') no-repeat top;
+.video-res {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: black;
     background-size: cover;
-    z-index:-8;
+}
+
+.video-overlay {
+    background:rgba(0,0,0,0.2);
     position:absolute;
+    width:100%;
+    height:100%;
     top:0;
     left:0;
 }
-
-.third {
-    background:url('https://unsplash.it/1980/1250/') no-repeat top;
-    background-size: cover;
-    z-index:-8;
-    position:absolute;
-    top:0;
-    right:0;
-}
-
 .superBump {
     width:100%;
-    height:700px;
+    height:100px;
 }
 
-.top {
-    position: relative;
+.text {
+    background:rgba(0,0,0,0.4);
+    border-radius:10px;
+    color: white;
+    padding: 2em
+}
+
+.midButton {
+    margin-top: -6em;
+}
+
+.hangLeft {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 100px !important;
+    width: 100px !important;
+}
+
+.hangRight {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    height: 100px !important;
+    width: 100px !important;
+}
+
+.btn-floating i {
+    font-size: 5.6rem;
+    line-height: 95.5px !important;
+}
+
+.btn-floating:hover {
+    -moz-animation: spinnerRotate .5s;
+    -webkit-animation: spinnerRotate .5s;
+    animation: spinnerRotate .5s;
+}
+
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+
+.photoBg {
 }

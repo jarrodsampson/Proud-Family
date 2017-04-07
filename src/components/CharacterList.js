@@ -11,6 +11,7 @@ export default class CharacterList extends Component {
             return (
                 <Character
                     image={characters.image}
+                    name={characters.name}
                     description={characters.description}
                     key={characters.image}
                 />
@@ -18,7 +19,7 @@ export default class CharacterList extends Component {
         }, this);
         return (
             <div className="characterList">
-                <OwlCarousel slideSpeed={300} items={2} itemsTablet={[1125,2]} itemsMobile={[700,1]} stopOnHover={true} lazyLoad={true} autoPlay={true} singleItem={false}>
+                <OwlCarousel slideSpeed={300} items={4} itemsTablet={[1125,2]} itemsMobile={[700,1]} stopOnHover={true} lazyLoad={true} autoPlay={true} singleItem={false}>
                     {characterList}
                 </OwlCarousel>
             </div>
